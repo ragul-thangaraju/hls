@@ -3,7 +3,7 @@ const fs = require("fs");
 const app = express()
 const port = 8080
 const Hls = require('hls-server');
-const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
+// const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
 const ffmpeg = require('fluent-ffmpeg');
 const cors = require("cors");
 
@@ -22,7 +22,7 @@ app.get('/client', (req, res) => {
 
 app.get('/', (req, res) => {
 
-    ffmpeg.setFfmpegPath(ffmpegPath);
+    // ffmpeg.setFfmpegPath(ffmpegPath);
     // const ffmpeg = require('fluent-ffmpeg');
 
 // open input stream
